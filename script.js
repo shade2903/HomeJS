@@ -7,7 +7,7 @@ const meanValueArr  = (arr) =>{ //метод вычисляющий средне
     console.log(summ/arr.length);
 }
 meanValueArr(arr);
-Array.prototype.meanValue = function () { 
+Array.prototype.meanValue = function () {  // 2
     let summ = 0;
     for(let i = 0; i < this.length; i++){
         summ += arr[i];
@@ -16,10 +16,10 @@ Array.prototype.meanValue = function () {
 }
 arr.meanValue();
 
-//максимальное число
-// const a = parseInt(prompt("enter first number"));
-// const b = parseInt(prompt("enter second number"));
-// const c = parseInt(prompt("enter third number"));
+// максимальное число
+const a = parseInt(prompt("enter first number"));
+const b = parseInt(prompt("enter second number"));
+const c = parseInt(prompt("enter third number"));
 
 function max(a,b,c){
     if (a == undefined){
@@ -37,7 +37,7 @@ function max(a,b,c){
    
     return b > c ? b : c;
 }
-// alert("Max number: "+ max(a,b,c));
+alert("Max number: "+ max(a,b,c));
 
 //Игра угадай число
 let randomNumber = Math.round((Math.random()*100));
