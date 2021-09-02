@@ -42,3 +42,18 @@ function max(a,b,c){
 //Игра угадай число
 let randomNumber = Math.round((Math.random()*100));
 console.log(randomNumber);
+let number = parseInt(prompt("enter the  number"));
+let count = 1;
+while(number!=randomNumber){
+    if(number > randomNumber){
+         number = parseInt(prompt("less"));
+         count++;
+    }else{
+        number = parseInt(prompt("more"));
+        count++;
+
+    }
+    
+     
+}
+alert("You win!!!! number of attempts: " + `${count}`);
